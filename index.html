@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <link href="./output/style.css" rel="stylesheet" />
+</head>
+
+<body class="text-white bg-black relative">
+  <header class="absolute top-0 left-0 right-0 w-full">
+    <div class="navbar py-1 lg:py-3 xl:py-6">
+      <div class="container">
+        <nav class="flex items-center justify-between h-16 relative z-40">
+          <div class="navabr-brand">
+            <a href="#"><img src="./src/assets/navbar/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="nav-items hidden lg:block">
+            <ul class="flex gap-2.5 items-center lg:gap-4 xl:gap-10">
+
+              <li>
+                <a href="index.html"
+                  class="relative flex items-center justify-center gap-2.5 px-4 py-2 rounded-full border-2 border-[white]/40 text-white text-[16px] font-stolzl">
+                  <span class="relative w-3 h-3 bg-white rounded-full blur-xs">
+                    <span class="absolute top-0 left-0 right-0 w-3 h-3 bg-white rounded-full blur-xs"></span>
+                  </span>
+                  Home</a>
+              </li>
+
+              <li>
+                <a href="#"
+                  class="group relative flex items-center justify-center gap-2.5 px-4 py-2 rounded-full border-2 border-transparent text-white text-[16px] font-stolzl hover:border-white/40 transition">
+
+                  <!-- glow dot -->
+                  <span
+                    class="relative w-3 h-3 bg-white rounded-full blur-xs opacity-0 group-hover:opacity-100 transition">
+                    <span class="absolute inset-0 bg-white rounded-full blur-sm"></span>
+                  </span>
+
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="group relative flex items-center justify-center gap-2.5 px-4 py-2 rounded-full border-2 border-transparent text-white text-[16px] font-stolzl hover:border-white/40 transition">
+
+                  <!-- glow dot -->
+                  <span
+                    class="relative w-3 h-3 bg-white rounded-full blur-xs opacity-0 group-hover:opacity-100 transition">
+                    <span class="absolute inset-0 bg-white rounded-full blur-sm"></span>
+                  </span>Shop
+                </a>
+              </li>
+
+              <li>
+                <a href="#"
+                  class="group relative flex items-center justify-center gap-2.5 px-4 py-2 rounded-full border-2 border-transparent text-white text-[16px] font-stolzl hover:border-white/40 transition">
+
+                  <!-- glow dot -->
+                  <span
+                    class="relative w-3 h-3 bg-white rounded-full blur-xs opacity-0 group-hover:opacity-100 transition">
+                    <span class="absolute inset-0 bg-white rounded-full blur-sm"></span>
+                  </span>Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-actions flex-row lg:gap-6 hidden xl:gap-10 lg:flex">
+            <div class="flex lg:gap-5 xl:gap-6">
+              <button>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.5 24.5L19.4367 19.4367M22.1667 12.8333C22.1667 17.988 17.988 22.1667 12.8333 22.1667C7.67868 22.1667 3.5 17.988 3.5 12.8333C3.5 7.67868 7.67868 3.5 12.8333 3.5C17.988 3.5 22.1667 7.67868 22.1667 12.8333Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.39258 2.3916H4.72591L7.82924 16.8816C7.94309 17.4123 8.23836 17.8867 8.66424 18.2231C9.09012 18.5595 9.61997 18.737 10.1626 18.7249H21.5726C22.1036 18.7241 22.6185 18.5421 23.0321 18.2091C23.4457 17.876 23.7334 17.4119 23.8476 16.8933L25.7726 8.22493H5.97424M10.5009 24.4999C10.5009 25.1443 9.97858 25.6666 9.33424 25.6666C8.68991 25.6666 8.16758 25.1443 8.16758 24.4999C8.16758 23.8556 8.68991 23.3333 9.33424 23.3333C9.97858 23.3333 10.5009 23.8556 10.5009 24.4999ZM23.3342 24.4999C23.3342 25.1443 22.8119 25.6666 22.1676 25.6666C21.5232 25.6666 21.0009 25.1443 21.0009 24.4999C21.0009 23.8556 21.5232 23.3333 22.1676 23.3333C22.8119 23.3333 23.3342 23.8556 23.3342 24.4999Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="nav-btns flex items-center lg:gap-5 xl:gap-6">
+              <a href="#"
+                class="border-2 border-[#7B0000] font-stolzl  px-6 py-2 flex items-center justify-center rounded-full text-center text-[14px] lg:text-[16px] xl:text-[18px]">Log
+                In</a>
+              <a href="#"
+                class="border border-white font-stolzl px-6 py-2 flex items-center justify-center rounded-full text-center text-[14px] lg:text-[16px] xl:text-[18px]">Sign
+                Up</a>
+            </div>
+          </div>
+          <div class="toggler cursor-pointer lg:hidden">
+            <i class="fa-solid fa-bars text-2xl menu-icon"></i>
+          </div>
+          <div
+            class="navbar-collapsed absolute left-0 right-0 -top-100 bg-black w-full flex flex-col items-center gap-6 p-2  lg:hidden">
+
+            <ul class="flex flex-col gap-4 items-center">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" class="">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-actions flex gap-2">
+              <button>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.5 24.5L19.4367 19.4367M22.1667 12.8333C22.1667 17.988 17.988 22.1667 12.8333 22.1667C7.67868 22.1667 3.5 17.988 3.5 12.8333C3.5 7.67868 7.67868 3.5 12.8333 3.5C17.988 3.5 22.1667 7.67868 22.1667 12.8333Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.39258 2.3916H4.72591L7.82924 16.8816C7.94309 17.4123 8.23836 17.8867 8.66424 18.2231C9.09012 18.5595 9.61997 18.737 10.1626 18.7249H21.5726C22.1036 18.7241 22.6185 18.5421 23.0321 18.2091C23.4457 17.876 23.7334 17.4119 23.8476 16.8933L25.7726 8.22493H5.97424M10.5009 24.4999C10.5009 25.1443 9.97858 25.6666 9.33424 25.6666C8.68991 25.6666 8.16758 25.1443 8.16758 24.4999C8.16758 23.8556 8.68991 23.3333 9.33424 23.3333C9.97858 23.3333 10.5009 23.8556 10.5009 24.4999ZM23.3342 24.4999C23.3342 25.1443 22.8119 25.6666 22.1676 25.6666C21.5232 25.6666 21.0009 25.1443 21.0009 24.4999C21.0009 23.8556 21.5232 23.3333 22.1676 23.3333C22.8119 23.3333 23.3342 23.8556 23.3342 24.4999Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="nav-btns flex flex-col items-center gap-4 w-full">
+              <a href="#" class="border-2 border-[#7B0000] py-2 px-4.5 rounded-4xl w-full text-center">Log In</a>
+              <a href="#" class="border-2 border-white py-2 px-4.5 rounded-4xl w-full text-center">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section
+      class="banner bg-[url(../src/assets/banner/banner-blur.svg)] bg-cover bg-center bg-no-repeat flex justify-center items-start  min-h-fit pt-24 sm:pt-28 md:pt-32 lg:pt-32 xl:pt-48">
+      <div class="container flex gap-8 flex-col lg:flex-col-reverse">
+         <div class="banner-books pt-8">
+          <!-- Slider main container -->
+          <div class="swiper bookSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide transition delay-75 ease-in-out">
+                <figure class="p-3">
+                  <img src="./src/assets/banner/deadpool.svg" alt="deadpool">
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="p-3">
+                  <img src="./src/assets/banner/the-secret-garden.svg" alt="the-secret-garden">
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="p-3">
+                  <img src="./src/assets/banner/fire-and-blood.svg" alt="fire-and-blood">
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="p-3">
+                  <img src="./src/assets/banner/narnia.svg" alt="narnia">
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="p-3">
+                  <img src="./src/assets/banner/harry-potter.svg" alt="harry-potter">
+                </figure>
+              </div>
+              
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+        <div class="banner-cnt text-center flex flex-col">
+          <h1 class="font-viaoda text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-28 mb-3.5">A Curated World of
+            Fine Books</h1>
+          <p class="font-source  text-[16px] sm:text-[18px] md:text-[20px] lg:text-2xl mb-5 xl:mb-11">Discover rare
+            editions, timeless literature, and beautifully crafted books</p>
+          <a href="#"
+            class="bg-black  border border-white px-4 py-3 text-[16px] rounded-4xl mx-auto w-full lg:text-[18px] md:w-fit lg:px-9">Shop
+            Now</a>
+        </div>
+       
+      </div>
+    </section>
+    <section class="features-collection py-12 lg:py-20 xl:py-36">
+      <div class="container">
+        <div class="features-col-inner flex flex-col justify-evenly items-center border border-[#FF482D] p-8 rounded-[18px] gap-8 text-center lg:py-8 xl:py-9 lg:flex-row">
+          <div class="">
+            <h2 class="font-viaoda text-3xl mb-4 xl:mb-6 xl:text-4xl">Editor’s Pick</h2>
+            <p class="font-source text-xl max-w-96 mx-auto mb-3 md:mb-5 xl:mb-7">Hand-selected books chosen for their depth, elegance, and lasting impact.</p>
+            <a class="font-source text-xl flex justify-center items-center gap-2  w-fit mx-auto lg:gap-2.5" href="#"><span class="border-b-2 border-white">Explore</span> <span><img src="./src/assets/features-section/arrow-right.svg" alt=""></span></a>
+          </div>
+          <span class="w-full h-[0.5px] lg:h-56 lg:w-[0.5px] bg-[#FF482D]"></span>
+          <div class="">
+            <h2 class="font-viaoda text-3xl mb-4 xl:mb-6 xl:text-4xl">Limited Edition</h2>
+            <p class="font-source text-xl max-w-96 mx-auto mb-3 md:mb-5 xl:mb-7">Exclusive prints and collector’s editions available in limited quantities.</p>
+            <a class="font-source text-xl flex justify-center items-center gap-2  w-fit mx-auto lg:gap-2.5" href="#"><span class="border-b-2 border-white">Explore</span> <span><img src="./src/assets/features-section/arrow-right.svg" alt=""></span></a>
+          </div>
+                    <span class="w-full h-[0.5px] lg:h-56 lg:w-[0.5px] bg-[#FF482D]"></span>
+
+          <div class="">
+            <h2 class="font-viaoda text-3xl mb-4 xl:mb-6 xl:text-4xl">Classics</h2>
+            <p class="font-source text-xl max-w-96 mx-auto mb-3 md:mb-5 xl:mb-7">Enduring masterpieces that continue to inspire across generations.</p>
+            <a class="font-source text-xl flex justify-center items-center gap-2  w-fit mx-auto lg:gap-2.5" href="#"><span class="border-b-2 border-white">Explore</span> <span><img src="./src/assets/features-section/arrow-right.svg" alt=""></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const toggle = document.querySelector(".toggler");
+    const navCollapsed = document.querySelector(".navbar-collapsed");
+    const menuIcon = document.querySelector(".menu-icon");
+
+    toggle.addEventListener("click", () => {
+      navCollapsed.classList.toggle("top-20");
+
+      // Change Icon
+      menuIcon.classList.toggle('fa-bars');
+      menuIcon.classList.toggle('fa-xmark');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./src/index.js"></script>
+
+</body>
+
+</html>

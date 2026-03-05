@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: "stolzl";
+    src: url('./assets/fonts/stolzl/stolzl_regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --white-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
+}
+
+@theme{
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+
+    /* --border-white-lg: linear-gradient(to top, #F6F6F6 100%, #F2F2F2 100%); */
+    /* --border-white-linear: linear-gradient(90deg,rgba(246, 246, 246, 1) 100%, rgba(242, 242, 242, 1) 100%); */
+    --border-white-linear: #F6F6F6;
+
+    --font-viaoda: "Viaoda Libre", serif;
+    --font-source: "Source Sans 3", sans-serif;
+    --font-stolzl: "stolzl", sans-serif;
+
+    --drop-shadow-whitecs: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
+    --color-random-blue: #FFFF00;
+
+
+} 
+
+
+
+@utility container{
+    max-width: 1794px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+
+.banner-books .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* rotation */
+.banner-books .swiper-slide:nth-child(1) figure {
+  transform: rotate(-14deg) translateY(18%);
+}
+.banner-books .swiper-slide:nth-child(2) figure {
+  transform: rotate(-7deg) translateY(5%);
+}
+.banner-books .swiper-slide:nth-child(3) figure {
+  transform: rotate(0deg);
+}
+.banner-books .swiper-slide:nth-child(4) figure {
+  transform: rotate(7deg) translateY(5%);
+}
+.banner-books .swiper-slide:nth-child(5) figure {
+  transform: rotate(14deg) translateY(18%);
+}
+/* .banner-books .swiper-slide:nth-child(even) figure {
+  transform: rotate(8deg);
+} */
