@@ -38,7 +38,7 @@
 
 @utility container{
     max-width: 1794px;
-    padding-inline: 15px;
+    padding-inline: 20px;
     margin-inline: auto;
 }
 
@@ -69,3 +69,15 @@
 /* .banner-books .swiper-slide:nth-child(even) figure {
   transform: rotate(8deg);
 } */
+ 
+/* .swiper-slide-active{
+  background: red;
+} */
+.swiper-slide-prev{
+  opacity: 0;
+} 
+.swiper-slide-next > figure {
+  transform: scale(0.8);
+  opacity: 0.8;
+
+}
