@@ -135,7 +135,7 @@
   </header>
   <main>
     <section
-      class="banner bg-[url(../src/assets/banner/banner-blur.svg)] bg-cover bg-center bg-no-repeat flex justify-center items-start  min-h-fit pt-24 sm:pt-28 md:pt-32 lg:pt-32 xl:pt-48">
+      class="banner bg-[url(../src/assets/banner/banner-blur.svg)] bg-cover bg-center bg-no-repeat flex justify-center items-start  min-h-fit pt-24 lg:pt-32 xl:pt-48">
       <div class="container flex gap-8 flex-col lg:flex-col-reverse">
         <div class="banner-books pt-8">
           <!-- Slider main container -->
@@ -184,7 +184,7 @@
       </div>
     </section>
     <section
-      class="features-collection py-12 lg:py-20 xl:py-36 bg-[url('../src/assets/features-section/bg-blur.svg')] bg-cover bg-center bg-no-repeat">
+      class="features-collection py-20 lg:py-32 xl:py-36 bg-[url('../src/assets/features-section/bg-blur.svg')] bg-cover bg-center bg-no-repeat">
       <div class="container">
         <div
           class="features-col-inner flex flex-col justify-evenly items-center border border-[#FF482D] p-8 rounded-[18px] gap-8 text-center lg:py-8 xl:py-9 lg:flex-row">
@@ -218,7 +218,7 @@
         </div>
       </div>
     </section>
-    <section class="best-seller relative py-12 lg:py-20 xl:py-36">
+    <section class="best-seller relative py-20 lg:py-32 xl:py-36">
       <div
         class="absolute inset-0 bg-[url('../src/assets/best-seller-section/background-blur.svg')] bg-contain bg-center bg-no-repeat opacity-100">
       </div>
@@ -287,7 +287,7 @@
         </div>
       </div>
     </section>
-    <section class="recently-curated relative py-12 lg:py-20 xl:py-36">
+    <section class="from-the-editor relative py-20 lg:py-32 xl:py-36">
       <div class="container">
         <div class="sec-cnt mb-7 text-center lg:text-left lg:mb-10">
           <h2 class="font-viaoda text-4xl leading-none mb-4 lg:mb-6 md:text-5xl lg:text-6xl">Recently Curated</h2>
@@ -299,72 +299,149 @@
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <!-- visible cards -->
-          <div class="book-card relative group overflow-hidden cursor-pointer shadow-(--tbb-shadow) hover:shadow-(--tbb-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
-            <div class="curated-img-wrapper bg-white rounded-[40px]"><img src="./src/assets/recently-curated-section/the-book-of-bill.svg"
-                alt="The Book of Bill"></div>
-            <div class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-12 py-7  max-w-full whitespace-nowrap rounded-4xl border-2 backdrop-blur-xl border-white/30
-shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
-              <h3 class="font-stolzl text-2xl">The Book of Bill<strong class="block text-xl font-normal text-center">By:
-                  <span class="text-[#EDB92B]">Alex
+          <div
+            class="book-card relative group overflow-hidden cursor-pointer shadow-(--tbb-shadow) hover:shadow-(--tbb-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
+            <div class="curated-img-wrapper rounded-[40px]"><img
+                src="./src/assets/recently-curated-section/the-book-of-bill.svg" alt="The Book of Bill"></div>
+
+            <div
+              class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-3 py-5 xl:px-12 xl:py-7  max-w-full whitespace-nowrap rounded-3xl xl:rounded-4xl border-2 backdrop-blur-xl border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
+              <h3 class="font-stolzl text-xl xl:text-2xl">The Book of Bill<strong
+                  class="block text-[16px] xl:text-xl font-normal text-center">By: <span class="text-[#EDB92B]">Alex
                     Hirsch</span></strong></h3>
-              <span class="font-stolzl text-[18px] font-normal text-white">Available Formats: Print</span>
+              <span class="font-stolzl text-[14px] xl:text-[18px] font-normal text-white">Available
+                Formats: Print</span>
               <a href="#"
-                class="bg-black border border-white px-4 py-3 text-[16px] rounded-4xl  mx-auto  lg:text-[18px] lg:px-9">Shop
-                Now</a>
-            </div>
-          </div>
-          <div class="book-card relative group overflow-hidden cursor-pointer shadow-(--pyn-shadow) hover:shadow-(--pyn-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
-            <div class="curated-img-wrapper"><img src="./src/assets/recently-curated-section/part-of-your-nightmare.svg"
-                alt="Part of Your Nightmare"></div>
-            <div class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-12 py-7  max-w-full whitespace-nowrap rounded-4xl border-2 backdrop-blur-xl border-white/30
-shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
-              <h3 class="font-stolzl text-2xl">Part of Your Nightmare<strong
-                  class="block text-xl font-normal text-center">By: <span class="text-[#EDB92B]">Alex
-                    Hirsch</span></strong></h3>
-              <span class="font-stolzl text-[18px] font-normal text-white">Available Formats: Print</span>
-              <a href="#"
-                class="bg-black border border-white px-4 py-3 text-[16px] rounded-4xl  mx-auto  lg:text-[18px] lg:px-9">Shop
+                class="bg-black border border-white px-3.5 py-2.5 xl:px-4 xl:py-3 text-[12px] rounded-4xl  mx-auto  xl:text-[18px] lg:px-9">Shop
                 Now</a>
             </div>
 
           </div>
-          <div class="book-card relative group overflow-hidden cursor-pointer shadow-(--bb-shadow) hover:shadow-(--bb-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
+          <div
+            class="book-card relative group overflow-hidden cursor-pointer shadow-(--pyn-shadow) hover:shadow-(--pyn-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
+            <div class="curated-img-wrapper"><img src="./src/assets/recently-curated-section/part-of-your-nightmare.svg"
+                alt="Part of Your Nightmare"></div>
+            <div
+              class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-3 py-5 xl:px-12 xl:py-7  max-w-full whitespace-nowrap rounded-3xl xl:rounded-4xl border-2 backdrop-blur-xl border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
+              <h3 class="font-stolzl text-xl xl:text-2xl">Part of Your Nightmare<strong
+                  class="block text-[16px] xl:text-xl font-normal text-center">By: <span class="text-[#EDB92B]">Alex
+                    Hirsch</span></strong></h3>
+              <span class="font-stolzl text-[14px] xl:text-[18px] font-normal text-white">Available Formats:
+                Print</span>
+              <a href="#"
+                class="bg-black border border-white px-3.5 py-2.5 xl:px-4 xl:py-3 text-[12px] rounded-4xl  mx-auto  xl:text-[18px] lg:px-9">Shop
+                Now</a>
+            </div>
+
+          </div>
+          <div
+            class="book-card relative group overflow-hidden cursor-pointer shadow-(--bb-shadow) hover:shadow-(--bb-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
             <div class="curated-img-wrapper"><img src="./src/assets/recently-curated-section/black-panther.svg"
                 alt="Black Panther"></div>
-            <div class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-12 py-7  max-w-full whitespace-nowrap rounded-4xl border-2 backdrop-blur-xl border-white/30
-shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
-              <h3 class="font-stolzl text-2xl">Black Panther: Uprising<strong
-                  class="block text-xl font-normal text-center">By: <span class="text-[#EDB92B]">Ronald L.
+            <div
+              class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-600 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-3 py-5 xl:px-12 xl:py-7  max-w-full whitespace-nowrap rounded-3xl xl:rounded-4xl border-2 backdrop-blur-xl border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
+              <h3 class="font-stolzl text-xl xl:text-2xl">Black Panther: Uprising<strong
+                  class="block text-[16px] xl:text-xl font-normal text-center">By: <span class="text-[#EDB92B]">Ronald
+                    L.
                     Smith</span></strong></h3>
-              <span class="font-stolzl text-[18px] font-normal text-white">Available Formats: Print</span>
+              <span class="font-stolzl text-[14px] xl:text-[18px] font-normal text-white">Available Formats:
+                Print</span>
               <a href="#"
-                class="bg-black border border-white px-4 py-3 text-[16px] rounded-4xl  mx-auto  lg:text-[18px] lg:px-9">Shop
+                class="bg-black border border-white px-3.5 py-2.5 xl:px-4 xl:py-3 text-[12px] rounded-4xl  mx-auto  xl:text-[18px] lg:px-9">Shop
                 Now</a>
             </div>
           </div>
-          <div class="book-card relative group overflow-hidden cursor-pointer shadow-(--top-shadow) hover:shadow-(--top-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
+          <div
+            class="book-card relative group overflow-hidden cursor-pointer shadow-(--top-shadow) hover:shadow-(--top-h-shadow) transition-all duration-500 ease-in-out rounded-[40px]">
             <div class="curated-img-wrapper"><img src="./src/assets/recently-curated-section/truth-to-power.svg"
                 alt="Truth To Power"></div>
-            <div class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-500 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-12 py-7  max-w-full whitespace-nowrap rounded-4xl border-2 backdrop-blur-xl border-white/30
-shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
-              <h3 class="font-stolzl text-2xl">Truth to Power<strong class="block text-xl font-normal text-center">By:
+            <div
+              class="book-info absolute -bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 opacity-100 group-hover:bottom-1/2 transition-all duration-500 ease-in-out flex flex-col justify-center items-center gap-4 bg-black/50 px-3 py-5 xl:px-12 xl:py-7  max-w-full whitespace-nowrap rounded-3xl xl:rounded-4xl border-2 backdrop-blur-xl border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.37)]">
+              <h3 class="font-stolzl text-xl xl:text-2xl">Truth to Power<strong
+                  class="block text-[16px] xl:text-xl font-normal text-center">By:
                   <span class="text-[#EDB92B]">Alex
                     Hirsch</span></strong></h3>
-              <span class="font-stolzl text-[18px] font-normal text-white">Available Formats: Print</span>
+              <span class="font-stolzl text-[14px] xl:text-[18px] font-normal text-white">Available Formats:
+                Print</span>
               <a href="#"
-                class="bg-black border border-white px-4 py-3 text-[16px] rounded-4xl  mx-auto  lg:text-[18px] lg:px-9">Shop
+                class="bg-black border border-white px-3.5 py-2.5 xl:px-4 xl:py-3 text-[12px] rounded-4xl  mx-auto  xl:text-[18px] lg:px-9">Shop
                 Now</a>
             </div>
+          </div>
+          <div class="bg-linear-(--pyn-ln-grd) min-h-full max-w-full z-20"></div>
+
+
+
+    </section>
+    <section
+      class="recently-curated relative py-20 lg:py-32 xl:py-36 bg-[url('../src/assets/from-the-editor/library.svg')] bg-no-repeat bg-right">
+      <div class="container">
+        <div class="sec-img absolute left-0 -top-2/4"><img src="./src/assets/from-the-editor/blur-half.svg" alt="blur">
+        </div>
+        <div class="relative sec-cnt mb-7 text-center lg:text-left lg:mb-10">
+          <!-- <div class="sec-img absolute left-0 top-0 bg-white"><img src="./src/assets/from-the-editor/blur.svg" alt="blur"></div> -->
+          <h2 class="font-viaoda text-4xl leading-none mb-4 lg:mb-6 md:text-5xl lg:text-6xl">From The Editor</h2>
+          <p
+            class="font-source font-light text-xl leading-8.75 max-w-209 w-full mx-auto text-shadow-(--fte-t-shadow) md:text-2xl lg:mx-0">
+            Our
+            curation is
+            guided by a simple philosophy: meaningful stories deserve beautiful editions. From modern voices to timeless
+            classics, each book is chosen to earn its place on your shelf.This library is the result of thoughtful
+            selection and refined taste. Each book is chosen for its contribution to literature, its craftsmanship, and
+            its ability to resonate beyond the moment.
+            <span class="block font-normal mt-4">— Editor-in-Chief</span>
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us relative py-20 lg:py-32 xl:py-36">
+      <div class="container">
+        <div class="sec-cnt mb-15 text-center lg:mb-20">
+          <h2 class="font-viaoda text-4xl leading-none mb-4 lg:mb-6 md:text-5xl lg:text-6xl">Why Choose Us</h2>
+        </div>
+
+        <div class="wcu-cards grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-4 text-center">
+          <div class="relative wcu-card bg-[#D9D9D9]/20 min-h-63.5 flex items-center justify-center px-6 rounded-[40px] overflow-hidden">
+            <div class="wcu-card-cnt max-w-97 w-full">
+              <h3 class="font-viaoda text-3xl leading-10.5 mb-4">Thoughtfully Curated</h3>
+              <p class="font-source text-[16px] leading-7.5 text-[#DBC3C3]">Every book is selected for its literary
+                value, craftsmanship, and lasting relevance—never for trends alone.</p>
+            </div>
+            <div class="bright-circle-iner absolute top-0 left-0 w-fit h-fit"><img src="./src/assets/why-choose-us-section/bright-circle.png" alt="Bright Circle"></div>
+          </div>
+          <div class="relative wcu-card bg-[#D9D9D9]/20 min-h-63.5 flex items-center justify-center px-6 rounded-[40px] overflow-hidden">
+            <div class="wcu-card-cnt max-w-97 w-full">
+              <h3 class="font-viaoda text-3xl leading-10.5 mb-4">Premium Editions</h3>
+              <p class="font-source text-[16px] leading-7.5 text-[#DBC3C3]">From limited prints to special editions, we focus on offering books that feel exclusive and valuable.</p>
+            </div>
+            <div class="bright-circle-iner absolute top-0 left-0 w-fit h-fit"><img src="./src/assets/why-choose-us-section/bright-circle.png" alt="Bright Circle"></div>
+          </div>
+          <div class="relative wcu-card bg-[#D9D9D9]/20 min-h-63.5 flex items-center justify-center px-6 rounded-[40px] overflow-hidden">
+            <div class="wcu-card-cnt max-w-97 w-full">
+              <h3 class="font-viaoda text-3xl leading-10.5 mb-4">Seamless Shopping</h3>
+              <p class="font-source text-[16px] leading-7.5 text-[#DBC3C3]">Our platform is designed with clear navigation, simple browsing, and a smooth checkout process.</p>
+            </div>
+            <div class="bright-circle-iner absolute top-0 left-0 w-fit h-fit"><img src="./src/assets/why-choose-us-section/bright-circle.png" alt="Bright Circle"></div>
+          </div>
+          <div class="relative wcu-card bg-[#D9D9D9]/20 min-h-63.5 flex items-center justify-center px-6 rounded-[40px] overflow-hidden">
+            <div class="wcu-card-cnt max-w-97 w-full">
+              <h3 class="font-viaoda text-3xl leading-10.5 mb-4">Reader-Centered Approach</h3>
+              <p class="font-source text-[16px] leading-7.5 text-[#DBC3C3]">We prioritize the reader’s journey by providing detailed descriptions, reviews, and recommendations.</p>
+            </div>
+            <div class="bright-circle-iner absolute top-0 left-0 w-fit h-fit"><img src="./src/assets/why-choose-us-section/bright-circle.png" alt="Bright Circle"></div>
           </div>
         </div>
 
 
+      </div>
     </section>
 
 
     <section class="py-12 lg:py-20 xl:py-36 bg-white">
       <div class="container">
-        <div class="p-4 bg-white h-24 w-24 shadow-xl/20"></div>
+        <div class="p-4 h-24 w-24 shadow-xl/20 "></div>
+        <div class="bg-linear-(--pyn-ln-grd) h-40 w-2xs z-20"></div>
       </div>
     </section>
   </main>

@@ -22,6 +22,10 @@
     --pyn-h-shadow: 0 5px 112px 0 rgba(98, 149, 247, 0.7);
     --bb-h-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.7);
     --top-h-shadow: 0 5px 112px 0 rgba(255, 162, 0, 0.7);
+
+    --pyn-ln-grd: 180deg,rgba(0, 0, 0, 1) 0%, rgba(13, 49, 125, 1) 100%;
+
+    --fte-t-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.6);
 }
 
 @theme{
