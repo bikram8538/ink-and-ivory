@@ -1,16 +1,21 @@
 var swiper = new Swiper(".bookSwiper", {
   slidesPerView: 5,
-  spaceBetween: 30,
-  freeMode: true,
+  spaceBetween: 40,
+  centeredSlides: true,
   loop: true,
+  initialSlide: 3,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: false,
   },
+  // /*
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
+  // */
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -22,8 +27,72 @@ var swiper = new Swiper(".bookSwiper", {
       slidesPerView: 5,
     },
   },
+
+  on: {
+    slideChange: function () {
+      // remove old classes
+      document.querySelectorAll(".swiper-slide").forEach((slide) => {
+        slide.classList.remove("next2", "prev2", "next3", "prev3");
+      });
+
+      const slides = this.slides;
+      const active = this.activeIndex;
+
+      if (slides[active + 2]) {
+        slides[active + 2].classList.add("next2");
+      }
+      if (slides[active + 3]) {
+        slides[active + 3].classList.add("next3");
+      }
+
+      if (slides[active - 2]) {
+        slides[active - 2].classList.add("prev2");
+      }
+      if (slides[active - 3]) {
+        slides[active - 3].classList.add("prev3");
+      }
+    /* ---------- CHANGE BANNER BACKGROUND ---------- */
+      const banner = document.getElementById("bannerSection");
+      const activeSlide = this.slides[this.activeIndex];
+      const bg = activeSlide.dataset.bg;
+
+      if (bg) {
+        banner.style.backgroundImage = `url(${bg})`;
+      }
+    },
+  },
 });
 
+/* 
+const swiper = new Swiper(".bookSwiper", {
+  slidesPerView: 5,
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 30,
+
+  on: {
+    slideChange: function () {
+
+      // remove old classes
+      document.querySelectorAll('.swiper-slide').forEach(slide=>{
+        slide.classList.remove('next2','prev2');
+      });
+
+      const slides = this.slides;
+      const active = this.activeIndex;
+
+      if(slides[active + 2]) {
+        slides[active + 2].classList.add("next2");
+      }
+
+      if(slides[active - 2]) {
+        slides[active - 2].classList.add("prev2");
+      }
+
+    }
+  }
+});
+*/
 var swiper = new Swiper(".sellerSwiper", {
   // effect: "coverflow",
   slidesPerView: 1.5,

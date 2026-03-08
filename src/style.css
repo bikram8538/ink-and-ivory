@@ -1,59 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
-
 @font-face {
-    font-family: "stolzl";
-    src: url('./assets/fonts/stolzl/stolzl_regular.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "stolzl";
+  src: url("./assets/fonts/stolzl/stolzl_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
-    --white-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
-    
-    --tbb-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.4);
-    --pyn-shadow: 0 5px 112px 0 rgba(98, 149, 247, 0.4);
-    --bb-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.4);
-    --top-shadow: 0 5px 112px 0 rgba(255, 162, 0, 0.4);
+:root {
+  --white-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
 
-    --tbb-h-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.7);
-    --pyn-h-shadow: 0 5px 112px 0 rgba(98, 149, 247, 0.7);
-    --bb-h-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.7);
-    --top-h-shadow: 0 5px 112px 0 rgba(255, 162, 0, 0.7);
+  --tbb-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.4);
+  --pyn-shadow: 0 5px 112px 0 rgba(98, 149, 247, 0.4);
+  --bb-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.4);
+  --top-shadow: 0 5px 112px 0 rgba(255, 162, 0, 0.4);
 
-    --pyn-ln-grd: 180deg,rgba(0, 0, 0, 1) 0%, rgba(13, 49, 125, 1) 100%;
+  --tbb-h-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.7);
+  --pyn-h-shadow: 0 5px 112px 0 rgba(98, 149, 247, 0.7);
+  --bb-h-shadow: 0 5px 112px 0 rgba(255, 74, 22, 0.7);
+  --top-h-shadow: 0 5px 112px 0 rgba(255, 162, 0, 0.7);
 
-    --fte-t-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.6);
+  --pyn-ln-grd: 180deg, rgba(0, 0, 0, 1) 0%, rgba(13, 49, 125, 1) 100%;
+
+  --fte-t-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.6);
+
+  --bnr-book-shadow:
+    -13px 15px 23.3px 0 rgba(0, 0, 0, 0.32),
+    5px 5px 10px 0 rgba(136, 150, 163, 0.4),
+    -4px -4px 10px 0 rgb(255, 255, 255, 0.4), 15px 5px 15.6px 0 #000000,
+    -5px -5px 10px 0 rgba(76, 112, 148, 0.25);
+  --ftr-bdr-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --ftr-hr-shadow:
+    -0.25px -0.25px 1px 0 #ff482d, 0.25px 0.25px 1px 0 #ff482d,
+    0 0 3px 0 rgba(255, 72, 45, 0.8), 0 0 5px 0 rgba(255, 72, 45, 0.6),
+    0 0 4px 0 rgba(175, 23, 0, 0.3);
+    --nav-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    --black-btn-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.3),
+    0 3px 10px 0 rgba(255, 255, 255, 0.4),
+    0 8px 20px 0 rgba(255, 255, 255, 0.4);
 }
 
-@theme{
-    --breakpoint-xs: 320px;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
+@theme {
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
 
-    /* --border-white-lg: linear-gradient(to top, #F6F6F6 100%, #F2F2F2 100%); */
-    /* --border-white-linear: linear-gradient(90deg,rgba(246, 246, 246, 1) 100%, rgba(242, 242, 242, 1) 100%); */
-    --border-white-linear: #F6F6F6;
+  /* --border-white-lg: linear-gradient(to top, #F6F6F6 100%, #F2F2F2 100%); */
+  /* --border-white-linear: linear-gradient(90deg,rgba(246, 246, 246, 1) 100%, rgba(242, 242, 242, 1) 100%); */
+  --border-white-linear: #f6f6f6;
 
-    --font-viaoda: "Viaoda Libre", serif;
-    --font-source: "Source Sans 3", sans-serif;
-    --font-stolzl: "stolzl", sans-serif;
+  --font-viaoda: "Viaoda Libre", serif;
+  --font-source: "Source Sans 3", sans-serif;
+  --font-stolzl: "stolzl", sans-serif;
 
-    --drop-shadow-whitecs: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
-    --color-random-blue: #FFFF00;
-} 
-
-
-
-@utility container{
-    max-width: 1794px;
-    padding-inline: 20px;
-    margin-inline: auto;
+  --drop-shadow-whitecs: 0 8px 20px 0 rgba(255, 255, 255, 0.4);
+  --color-random-blue: #ffff00;
 }
 
+@utility container {
+  max-width: 1794px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
 
 .banner-books .swiper-slide {
   display: flex;
@@ -61,35 +72,40 @@
   align-items: center;
 }
 
+.bookSwiper {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-inline: 24px;
+}
 
-/* rotation */
-.banner-books .swiper-slide:nth-child(1) figure {
-  transform: rotate(-14deg) translateY(18%);
+.bookSwiper .swiper-slide-active {
+  transform: translateY(-2%);
 }
-.banner-books .swiper-slide:nth-child(2) figure {
-  transform: rotate(-7deg) translateY(5%);
+.bookSwiper .swiper-slide-prev {
+  transform: rotate(-7deg) translateY(5%) scale(0.95);
 }
-.banner-books .swiper-slide:nth-child(3) figure {
-  transform: rotate(0deg);
+.bookSwiper .swiper-slide-next {
+  transform: rotate(7deg) translateY(5%) scale(0.95);
 }
-.banner-books .swiper-slide:nth-child(4) figure {
-  transform: rotate(7deg) translateY(5%);
+.bookSwiper .next2 {
+  transform: rotate(14deg) translateY(18%) scale(0.9);
 }
-.banner-books .swiper-slide:nth-child(5) figure {
-  transform: rotate(14deg) translateY(18%);
+.bookSwiper .prev2 {
+  transform: rotate(-14deg) translateY(18%) scale(0.9);
 }
-/* .banner-books .swiper-slide:nth-child(even) figure {
-  transform: rotate(8deg);
-} */
- 
-/* .swiper-slide-active{
-  background: red;
-} */
-.swiper-slide-prev{
+
+.bookSwiper .next3 {
+  transform: rotate(14deg) translateY(35%) scale(0.85);
+}
+.bookSwiper .prev3 {
+  transform: rotate(-14deg) translateY(35%) scale(0.85);
+}
+
+/* Best Seller Section Swiper */
+.sellerSwiper .swiper-slide-prev {
   opacity: 0;
-} 
-.swiper-slide-next > figure {
+}
+.sellerSwiper .swiper-slide-next > figure {
   transform: scale(0.8);
   opacity: 0.8;
-
 }
