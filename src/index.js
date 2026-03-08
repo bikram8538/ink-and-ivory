@@ -1,3 +1,14 @@
+const toggle = document.querySelector(".toggler");
+const navCollapsed = document.querySelector(".navbar-collapsed");
+const menuIcon = document.querySelector(".menu-icon");
+
+toggle.addEventListener("click", () => {
+  navCollapsed.classList.toggle("top-20");
+
+  // Change Icon
+  menuIcon.classList.toggle("fa-bars");
+  menuIcon.classList.toggle("fa-xmark");
+});
 var swiper = new Swiper(".bookSwiper", {
   slidesPerView: 5,
   spaceBetween: 40,
@@ -51,7 +62,7 @@ var swiper = new Swiper(".bookSwiper", {
       if (slides[active - 3]) {
         slides[active - 3].classList.add("prev3");
       }
-    /* ---------- CHANGE BANNER BACKGROUND ---------- */
+      /* ---------- CHANGE BANNER BACKGROUND ---------- */
       const banner = document.getElementById("bannerSection");
       const activeSlide = this.slides[this.activeIndex];
       const bg = activeSlide.dataset.bg;
@@ -63,36 +74,6 @@ var swiper = new Swiper(".bookSwiper", {
   },
 });
 
-/* 
-const swiper = new Swiper(".bookSwiper", {
-  slidesPerView: 5,
-  centeredSlides: true,
-  loop: true,
-  spaceBetween: 30,
-
-  on: {
-    slideChange: function () {
-
-      // remove old classes
-      document.querySelectorAll('.swiper-slide').forEach(slide=>{
-        slide.classList.remove('next2','prev2');
-      });
-
-      const slides = this.slides;
-      const active = this.activeIndex;
-
-      if(slides[active + 2]) {
-        slides[active + 2].classList.add("next2");
-      }
-
-      if(slides[active - 2]) {
-        slides[active - 2].classList.add("prev2");
-      }
-
-    }
-  }
-});
-*/
 var swiper = new Swiper(".sellerSwiper", {
   // effect: "coverflow",
   slidesPerView: 1.5,
@@ -126,6 +107,7 @@ var swiper = new Swiper(".sellerSwiper", {
     },
     992: {
       slidesPerView: 1,
+      centeredSlides: true,
     },
     1024: {
       slidesPerView: 2,
