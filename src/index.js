@@ -94,10 +94,10 @@ var swiper = new Swiper(".sellerSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  /* autoplay: {
+  autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  },*/
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
