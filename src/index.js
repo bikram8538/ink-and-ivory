@@ -103,10 +103,10 @@ var swiper = new Swiper(".sellerSwiper", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     992: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       centeredSlides: true,
     },
     1024: {
