@@ -5,33 +5,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./src/assets/favicon_io/site.webmanifest">
+    <!-- favicon start -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../src/assets/favicon_io/site.webmanifest">
+  <!-- favicon end -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link href="./output/style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body class="text-white bg-black relative">
     <header class="absolute top-0 left-0 right-0 w-full">
         <div class="navbar py-2 lg:py-3 xl:py-6">
             <div class="container">
-                <nav class="flex items-center justify-between h-16 relative z-40">
+                <nav>
                     <div class="navbar-brand">
-                        <a href="index.html"><img src="./src/assets/navbar/logo.svg" alt="logo" /></a>
+                        <a href="index.html"><img src="../src/assets/navbar/logo.svg" alt="logo" /></a>
                     </div>
-                    <div class="nav-items hidden lg:block">
+                    <div class="nav-items">
                         <ul class="flex gap-2.5 items-center lg:gap-3 xl:gap-12">
                             <li>
                                 <a href="index.html"
                                     class="group flex items-center justify-center lg:px-3 xl:px-4.5 py-2 lg:gap-2 xl:gap-2.5 rounded-full outline-2 outline-transparent hover:outline-[white]/40 transition-all ease-linear">
                                     <span
                                         class="opacity-0 group-hover:opacity-100 transition-opacity ease-linear shadow-(--nav-shadow)"><img
-                                            src="./src/assets/navbar/nav-blur.svg" alt=""></span>
+                                            src="../src/assets/navbar/nav-blur.svg" alt=""></span>
                                     <span class="text-white text-[16px] font-stolzl">Home</span>
                                 </a>
                             </li>
@@ -40,30 +42,30 @@
                                     class="group flex items-center justify-center lg:px-3 xl:px-4.5 py-2 lg:gap-2 xl:gap-2.5 rounded-full outline-2 outline-transparent hover:outline-[white]/40 transition-all ease-linear">
                                     <span
                                         class="opacity-0 group-hover:opacity-100 transition-opacity ease-linear shadow-(--nav-shadow)"><img
-                                            src="./src/assets/navbar/nav-blur.svg" alt=""></span>
+                                            src="../src/assets/navbar/nav-blur.svg" alt=""></span>
                                     <span class="text-white text-[16px] font-stolzl">About</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="shop.html"
                                     class="group flex items-center justify-center lg:px-3 xl:px-4.5 py-2 lg:gap-2 xl:gap-2.5 rounded-full outline-2 outline-[white]/40">
-                                    <span class="shadow-(--nav-shadow)"><img src="./src/assets/navbar/nav-blur.svg"
+                                    <span class="shadow-(--nav-shadow)"><img src="../src/assets/navbar/nav-blur.svg"
                                             alt=""></span>
                                     <span class="text-white text-[16px] font-stolzl">Shop</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html"
+                                <a href="contact.html"
                                     class="group flex items-center justify-center lg:px-3 xl:px-4.5 py-2 lg:gap-2 xl:gap-2.5 rounded-full outline-2 outline-transparent hover:outline-[white]/40 transition-all ease-linear">
                                     <span
                                         class="opacity-0 group-hover:opacity-100 transition-opacity ease-linear shadow-(--nav-shadow)"><img
-                                            src="./src/assets/navbar/nav-blur.svg" alt=""></span>
+                                            src="../src/assets/navbar/nav-blur.svg" alt=""></span>
                                     <span class="text-white text-[16px] font-stolzl">Contact</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="nav-actions flex-row lg:gap-6 hidden xl:gap-10 lg:flex">
+                    <div class="nav-actions">
                         <div class="flex lg:gap-5 xl:gap-6">
                             <button class="stroke-white cursor-pointer">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
@@ -93,8 +95,8 @@
                                 Up</a>
                         </div>
                     </div>
-                    <div class="toggler cursor-pointer lg:hidden">
-                        <i class="fa-solid fa-bars text-2xl menu-icon"></i>
+                    <div class="toggler">
+                        <i class="menu-icon fa-solid fa-bars"></i>
                     </div>
                     <div
                         class="navbar-collapsed absolute left-0 right-0 -top-325 min-h-fit bg-black/20 border-2 max-w-full backdrop-blur-sm flex flex-col items-center gap-6 py-14 rounded-4xl lg:hidden">
@@ -163,7 +165,7 @@
                 <div class="grid p-2.5 place-items-center grid-cols-12 gap-8">
                     <div
                         class="overflow-hidden rounded-[46px] main-book-img col-span-12 lg:col-span-6 xl:col-span-3 2xl:col-span-3 shadow-(--book-shadow)">
-                        <img src="./src/assets/shop-page/breaking-the-dark-bg.svg" alt="breaking-the-dark-bg">
+                        <img src="../src/assets/shop-page/breaking-the-dark-bg.svg" alt="breaking-the-dark-bg">
                     </div>
                     <div class="main-book-des col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-5">
                         <div class="main-book-cnt mb-15">
@@ -226,7 +228,7 @@
                 <div class="books flex gap-8 justify-evenly flex-wrap">
                     <div class="book-card">
                         <div class="bk-img rounded-[22px] shadow-(--book-shadow) mb-6"><img
-                                src="./src/assets/shop-page/braking-the-dark.png" alt="breaking the dark"></div>
+                                src="../src/assets/shop-page/braking-the-dark.png" alt="breaking the dark"></div>
                         <div class="bk-cnt mb-4">
                             <h3 class="font-source text-2xl leading-10">Breaking the Dark</h3>
                             <span class="block font-source text-[16px leading-1.5]">By: Lisa Jewell</span>
@@ -239,7 +241,7 @@
                     </div>
                     <div class="book-card">
                         <div class="bk-img rounded-[22px] shadow-(--book-shadow) mb-6"><img
-                                src="./src/assets/shop-page/eney-of-my-enemy.png" alt="eney-of-my-enemy"></div>
+                                src="../src/assets/shop-page/eney-of-my-enemy.png" alt="eney-of-my-enemy"></div>
                         <div class="bk-cnt mb-4">
                             <h3 class="font-source text-2xl leading-10">Breaking the Dark</h3>
                             <span class="block font-source text-[16px leading-1.5]">By: Lisa Jewell</span>
@@ -252,7 +254,7 @@
                     </div>
                     <div class="book-card">
                         <div class="bk-img rounded-[22px] shadow-(--book-shadow) mb-6"><img
-                                src="./src/assets/shop-page/truth-to-power.png" alt="truth-to-power"></div>
+                                src="../src/assets/shop-page/truth-to-power.png" alt="truth-to-power"></div>
                         <div class="bk-cnt mb-4">
                             <h3 class="font-source text-2xl leading-10">Breaking the Dark</h3>
                             <span class="block font-source text-[16px leading-1.5]">By: Lisa Jewell</span>
@@ -265,7 +267,7 @@
                     </div>
                     <div class="book-card">
                         <div class="bk-img rounded-[22px] shadow-(--book-shadow) mb-6"><img
-                                src="./src/assets/shop-page/black-panther.png" alt="black-panther"></div>
+                                src="../src/assets/shop-page/black-panther.png" alt="black-panther"></div>
                         <div class="bk-cnt mb-4">
                             <h3 class="font-source text-2xl leading-10">Breaking the Dark</h3>
                             <span class="block font-source text-[16px leading-1.5]">By: Lisa Jewell</span>
@@ -278,7 +280,7 @@
                     </div>
                     <div class="book-card">
                         <div class="bk-img rounded-[22px] shadow-(--book-shadow) mb-6"><img
-                                src="./src/assets/shop-page/braking-the-dark-2.png" alt="breaking the dark"></div>
+                                src="../src/assets/shop-page/braking-the-dark-2.png" alt="breaking the dark"></div>
                         <div class="bk-cnt mb-4">
                             <h3 class="font-source text-2xl leading-10">Breaking the Dark</h3>
                             <span class="block font-source text-[16px leading-1.5]">By: Lisa Jewell</span>
@@ -358,7 +360,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./src/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
